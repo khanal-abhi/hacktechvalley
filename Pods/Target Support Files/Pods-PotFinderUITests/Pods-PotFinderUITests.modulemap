@@ -1,0 +1,6 @@
+framework module Pods_PotFinderUITests {
+  umbrella header "Pods-PotFinderUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

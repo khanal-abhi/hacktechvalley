@@ -1,0 +1,6 @@
+framework module Pods_PotFinder {
+  umbrella header "Pods-PotFinder-umbrella.h"
+
+  export *
+  module * { export * }
+}
