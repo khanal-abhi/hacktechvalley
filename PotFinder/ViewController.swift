@@ -14,6 +14,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var loginButton: UIBarButtonItem!
     @IBOutlet weak var logoutButton: UIBarButtonItem!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     var handle: AuthStateDidChangeListenerHandle? = nil
 
@@ -66,6 +69,47 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func userDidLogIn(_ sender: Any) {
+        activityIndicator.startAnimating()
+        Auth.auth().signIn(withEmail: email.text ?? "",
+                               password: password.text ?? "") { [weak self](user, error) in
+                                self?.activityIndicator.stopAnimating()
+                                if (error != nil) {
+                                    print(error)
+                                    let alert = UIAlertController(title: "Error!",
+                                                                  message: "Could not log in the user!",
+                                                                  preferredStyle: .alert)
+                                    let dismissAction = UIAlertAction(title: "Ok",
+                                                                      style: .default,
+                                                                      handler: nil)
+                                    alert.addAction(dismissAction)
+                                    self?.present(alert, animated: true, completion: nil)
+                                } else {
+                                    print(user)
+                                }
+        }
+    }
+
+    @IBAction func userDidSignUp(_ sender: Any) {
+        activityIndicator.startAnimating()
+        Auth.auth().createUser(withEmail: email.text ?? "",
+                               password: password.text ?? "") { [weak self](user, error) in
+                               self?.activityIndicator.stopAnimating()
+                                if (error != nil) {
+                                    print(error)
+                                    let alert = UIAlertController(title: "Error!",
+                                                                  message: "Could not create the user!",
+                                                                  preferredStyle: .alert)
+                                    let dismissAction = UIAlertAction(title: "Ok",
+                                                                      style: .default,
+                                                                      handler: nil)
+                                    alert.addAction(dismissAction)
+                                    self?.present(alert, animated: true, completion: nil)
+                                } else {
+                                    print(user)
+                                }
+        }
+    }
 
 }
 
