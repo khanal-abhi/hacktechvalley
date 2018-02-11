@@ -11,6 +11,7 @@ target 'PotFinder' do
   pod 'RxSwift'
   pod 'Alamofire'
   pod 'ObjectMapper'
+  pod 'Cloudinary'
 
   target 'PotFinderTests' do
     inherit! :search_paths

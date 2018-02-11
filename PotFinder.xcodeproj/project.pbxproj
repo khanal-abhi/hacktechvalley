@@ -13,6 +13,8 @@
 		3805D436202F89F6003E35A1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3805D435202F89F6003E35A1 /* MapKit.framework */; };
 		3805D438202F904A003E35A1 /* PotHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805D437202F904A003E35A1 /* PotHole.swift */; };
 		3805D43A202F907A003E35A1 /* PotHole.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3805D439202F907A003E35A1 /* PotHole.xib */; };
+		3805D43C202FB0FB003E35A1 /* ReportPotHoleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3805D43B202FB0FB003E35A1 /* ReportPotHoleViewController.xib */; };
+		3805D43E202FB12D003E35A1 /* ReportPotHoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805D43D202FB12D003E35A1 /* ReportPotHoleViewController.swift */; };
 		38A3FBAC202F7CA400A47F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3FBAB202F7CA400A47F4A /* AppDelegate.swift */; };
 		38A3FBAE202F7CA400A47F4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3FBAD202F7CA400A47F4A /* ViewController.swift */; };
 		38A3FBB1202F7CA400A47F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A3FBAF202F7CA400A47F4A /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 		3805D435202F89F6003E35A1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3805D437202F904A003E35A1 /* PotHole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotHole.swift; sourceTree = "<group>"; };
 		3805D439202F907A003E35A1 /* PotHole.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PotHole.xib; sourceTree = "<group>"; };
+		3805D43B202FB0FB003E35A1 /* ReportPotHoleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportPotHoleViewController.xib; sourceTree = "<group>"; };
+		3805D43D202FB12D003E35A1 /* ReportPotHoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportPotHoleViewController.swift; sourceTree = "<group>"; };
 		38A3FBA8202F7CA400A47F4A /* PotFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PotFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A3FBAB202F7CA400A47F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38A3FBAD202F7CA400A47F4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				3805D433202F884D003E35A1 /* MapViewController.swift */,
 				3805D437202F904A003E35A1 /* PotHole.swift */,
 				3805D439202F907A003E35A1 /* PotHole.xib */,
+				3805D43B202FB0FB003E35A1 /* ReportPotHoleViewController.xib */,
+				3805D43D202FB12D003E35A1 /* ReportPotHoleViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				3805D42F202F86E0003E35A1 /* GoogleService-Info.plist in Resources */,
 				38A3FBB3202F7CA400A47F4A /* Assets.xcassets in Resources */,
 				38A3FBB1202F7CA400A47F4A /* Main.storyboard in Resources */,
+				3805D43C202FB0FB003E35A1 /* ReportPotHoleViewController.xib in Resources */,
 				3805D432202F874A003E35A1 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +354,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PotFinder/Pods-PotFinder-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cloudinary/Cloudinary.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -356,6 +364,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cloudinary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -503,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3805D43E202FB12D003E35A1 /* ReportPotHoleViewController.swift in Sources */,
 				38A3FBAE202F7CA400A47F4A /* ViewController.swift in Sources */,
 				3805D434202F884D003E35A1 /* MapViewController.swift in Sources */,
 				38A3FBAC202F7CA400A47F4A /* AppDelegate.swift in Sources */,

@@ -37,6 +37,15 @@ class ViewController: UIViewController {
             navigationController?.pushViewController(mapViewController, animated: true)
         }
     }
+
+    func openMapView() {
+        if let mapViewController = Bundle.main.loadNibNamed("MapViewController",
+                                                            owner: nil,
+                                                            options: nil)?.first as? MapViewController {
+            navigationController?.pushViewController(mapViewController, animated: true)
+        }
+    }
+
     @IBAction func userDidLogin(_ sender: Any) {
     }
 
@@ -75,7 +84,7 @@ class ViewController: UIViewController {
                                password: password.text ?? "") { [weak self](user, error) in
                                 self?.activityIndicator.stopAnimating()
                                 if (error != nil) {
-                                    print(error)
+//                                    print(error)
                                     let alert = UIAlertController(title: "Error!",
                                                                   message: "Could not log in the user!",
                                                                   preferredStyle: .alert)
@@ -85,7 +94,8 @@ class ViewController: UIViewController {
                                     alert.addAction(dismissAction)
                                     self?.present(alert, animated: true, completion: nil)
                                 } else {
-                                    print(user)
+//                                    print(user)
+                                    self?.openMapView()
                                 }
         }
     }
@@ -96,7 +106,7 @@ class ViewController: UIViewController {
                                password: password.text ?? "") { [weak self](user, error) in
                                self?.activityIndicator.stopAnimating()
                                 if (error != nil) {
-                                    print(error)
+//                                    print(error)
                                     let alert = UIAlertController(title: "Error!",
                                                                   message: "Could not create the user!",
                                                                   preferredStyle: .alert)
@@ -106,7 +116,8 @@ class ViewController: UIViewController {
                                     alert.addAction(dismissAction)
                                     self?.present(alert, animated: true, completion: nil)
                                 } else {
-                                    print(user)
+//                                    print(user)
+                                    self?.openMapView()
                                 }
         }
     }

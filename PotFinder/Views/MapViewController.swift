@@ -23,8 +23,12 @@ class MapViewController: UIViewController {
 
     let potholeMarker = "PotHoleMarker"
 
+    var handle: AuthStateDidChangeListenerHandle? = nil
+
+
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var userLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,9 +71,65 @@ class MapViewController: UIViewController {
         mapView.addAnnotations(potHoles)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.title = "Report Pothole"
+        handle = Auth.auth().addStateDidChangeListener({ [weak self] auth, user in
+            guard let it = self else {
+                return
+            }
+            if let user = user {
+                // Logged in
+                if let userEmail = user.email {
+                    self?.userLabel.text = userEmail
+                    UIView.animate(withDuration: 0.25,
+                                   delay: 3,
+                                   options: [UIViewAnimationOptions.curveEaseIn],
+                                   animations: {
+                                    self?.userLabel.alpha = 0
+                    }, completion: { (completed) in
+                        if completed {
+                            self?.userLabel.isHidden = true
+                        }
+                    })
+                }
+            } else {
+                // Logged out
+                self?.navigationController?.popViewController(animated: true)
+            }
+        })
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func userDidTapTheFab(_ sender: Any) {
+        let actionSheet = UIAlertController(title: "What would you like to do?",
+                                            message: "",
+                                            preferredStyle: .actionSheet)
+
+        let reportAction = UIAlertAction(title: "Report a pothole", style: .default) {[weak self] (_) in
+            //
+            if let vc = Bundle.main.loadNibNamed("ReportPotHoleViewController", owner: nil, options: nil)?.first as? ReportPotHoleViewController {
+                vc.location = self?.loc
+                self?.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
+            // 
+        }
+
+        actionSheet.addAction(reportAction)
+        actionSheet.addAction(cancelAction)
+
+        present(actionSheet, animated: true, completion: nil)
     }
 
 }

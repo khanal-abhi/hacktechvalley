@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.6.0)
+  - Cloudinary (2.0.3):
+    - Alamofire (~> 4.1)
   - Firebase (4.7.0):
     - Firebase/Core (= 4.7.0)
   - Firebase/Auth (4.7.0):
@@ -41,6 +43,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Cloudinary
   - Firebase
   - Firebase/Auth
   - ObjectMapper
@@ -48,6 +51,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Cloudinary: 341dbe68a4b0121b1018e3bd353cf94d68ded04f
   Firebase: dbfb98ccec2dcfcd21ab9cc1b4981a3f3c8c5e26
   FirebaseAnalytics: 5b02a63ead2c3f0259cfc7f15e053e440587ecf8
   FirebaseAuth: cdeee95b528958dbb7dcf220ad0fb804d3a284b0
@@ -59,6 +63,6 @@ SPEC CHECKSUMS:
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
 
-PODFILE CHECKSUM: 429c6265c363c2424d918d1bb9b98280e27e5cbd
+PODFILE CHECKSUM: 4475caf277dacdbeddf2bdca9c68e44703d3309b
 
 COCOAPODS: 1.3.1
