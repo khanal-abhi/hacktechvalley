@@ -15,6 +15,21 @@
 		3805D43A202F907A003E35A1 /* PotHole.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3805D439202F907A003E35A1 /* PotHole.xib */; };
 		3805D43C202FB0FB003E35A1 /* ReportPotHoleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3805D43B202FB0FB003E35A1 /* ReportPotHoleViewController.xib */; };
 		3805D43E202FB12D003E35A1 /* ReportPotHoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805D43D202FB12D003E35A1 /* ReportPotHoleViewController.swift */; };
+		3805D441202FE09E003E35A1 /* PotHoleDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805D440202FE09E003E35A1 /* PotHoleDomain.swift */; };
+		3865C68D202FE57100D1F058 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38A3FBB7202F7CA400A47F4A /* Info.plist */; };
+		3865C693202FF6D400D1F058 /* PotHolePinAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C692202FF6D400D1F058 /* PotHolePinAnnotationView.swift */; };
+		3865C695202FF83800D1F058 /* PotHoleMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C694202FF83800D1F058 /* PotHoleMarker.swift */; };
+		3865C6972030031200D1F058 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C6962030031200D1F058 /* AppConstants.swift */; };
+		3865C6992030049E00D1F058 /* TokenDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C6982030049E00D1F058 /* TokenDomain.swift */; };
+		3865C69B2030075500D1F058 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C69A2030075500D1F058 /* ApiService.swift */; };
+		3865C69F20307B9100D1F058 /* LocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C69E20307B9100D1F058 /* LocationAnnotation.swift */; };
+		3865C6A220308CBF00D1F058 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3865C6A120308CBF00D1F058 /* data.json */; };
+		3865C6A420308E2400D1F058 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C6A320308E2400D1F058 /* JsonData.swift */; };
+		3865C6AA203092AA00D1F058 /* SpeedOverlayAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C6A9203092AA00D1F058 /* SpeedOverlayAnnotation.swift */; };
+		3865C6AD2030984600D1F058 /* SpeedOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3865C6AB203097F900D1F058 /* SpeedOverlay.xib */; };
+		3865C6AF2030988300D1F058 /* SpeedOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C6AE2030988300D1F058 /* SpeedOverlay.swift */; };
+		3865C6B120309DEA00D1F058 /* PotHoleAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3865C6B020309DEA00D1F058 /* PotHoleAnnotationView.xib */; };
+		3865C6B320309E2B00D1F058 /* PotHoleAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865C6B220309E2B00D1F058 /* PotHoleAnnotationView.swift */; };
 		38A3FBAC202F7CA400A47F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3FBAB202F7CA400A47F4A /* AppDelegate.swift */; };
 		38A3FBAE202F7CA400A47F4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3FBAD202F7CA400A47F4A /* ViewController.swift */; };
 		38A3FBB1202F7CA400A47F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A3FBAF202F7CA400A47F4A /* Main.storyboard */; };
@@ -55,6 +70,20 @@
 		3805D439202F907A003E35A1 /* PotHole.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PotHole.xib; sourceTree = "<group>"; };
 		3805D43B202FB0FB003E35A1 /* ReportPotHoleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportPotHoleViewController.xib; sourceTree = "<group>"; };
 		3805D43D202FB12D003E35A1 /* ReportPotHoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportPotHoleViewController.swift; sourceTree = "<group>"; };
+		3805D440202FE09E003E35A1 /* PotHoleDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotHoleDomain.swift; sourceTree = "<group>"; };
+		3865C692202FF6D400D1F058 /* PotHolePinAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotHolePinAnnotationView.swift; sourceTree = "<group>"; };
+		3865C694202FF83800D1F058 /* PotHoleMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotHoleMarker.swift; sourceTree = "<group>"; };
+		3865C6962030031200D1F058 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		3865C6982030049E00D1F058 /* TokenDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDomain.swift; sourceTree = "<group>"; };
+		3865C69A2030075500D1F058 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		3865C69E20307B9100D1F058 /* LocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotation.swift; sourceTree = "<group>"; };
+		3865C6A120308CBF00D1F058 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = PotFinder/data.json; sourceTree = SOURCE_ROOT; };
+		3865C6A320308E2400D1F058 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
+		3865C6A9203092AA00D1F058 /* SpeedOverlayAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedOverlayAnnotation.swift; sourceTree = "<group>"; };
+		3865C6AB203097F900D1F058 /* SpeedOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeedOverlay.xib; sourceTree = "<group>"; };
+		3865C6AE2030988300D1F058 /* SpeedOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedOverlay.swift; sourceTree = "<group>"; };
+		3865C6B020309DEA00D1F058 /* PotHoleAnnotationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PotHoleAnnotationView.xib; sourceTree = "<group>"; };
+		3865C6B220309E2B00D1F058 /* PotHoleAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotHoleAnnotationView.swift; sourceTree = "<group>"; };
 		38A3FBA8202F7CA400A47F4A /* PotFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PotFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A3FBAB202F7CA400A47F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38A3FBAD202F7CA400A47F4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,14 +138,41 @@
 		3805D430202F873D003E35A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3865C6A9203092AA00D1F058 /* SpeedOverlayAnnotation.swift */,
 				3805D431202F874A003E35A1 /* MapViewController.xib */,
 				3805D433202F884D003E35A1 /* MapViewController.swift */,
 				3805D437202F904A003E35A1 /* PotHole.swift */,
 				3805D439202F907A003E35A1 /* PotHole.xib */,
 				3805D43B202FB0FB003E35A1 /* ReportPotHoleViewController.xib */,
 				3805D43D202FB12D003E35A1 /* ReportPotHoleViewController.swift */,
+				3865C692202FF6D400D1F058 /* PotHolePinAnnotationView.swift */,
+				3865C694202FF83800D1F058 /* PotHoleMarker.swift */,
+				3865C6AE2030988300D1F058 /* SpeedOverlay.swift */,
+				3865C6AB203097F900D1F058 /* SpeedOverlay.xib */,
+				3865C6B020309DEA00D1F058 /* PotHoleAnnotationView.xib */,
+				3865C6B220309E2B00D1F058 /* PotHoleAnnotationView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3805D43F202FE08D003E35A1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3805D440202FE09E003E35A1 /* PotHoleDomain.swift */,
+				3865C6982030049E00D1F058 /* TokenDomain.swift */,
+				3865C69A2030075500D1F058 /* ApiService.swift */,
+				3865C69E20307B9100D1F058 /* LocationAnnotation.swift */,
+				3865C6A320308E2400D1F058 /* JsonData.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3865C6A020308CAB00D1F058 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3865C6A120308CBF00D1F058 /* data.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		38A3FB9F202F7CA400A47F4A = {
@@ -144,12 +200,15 @@
 		38A3FBAA202F7CA400A47F4A /* PotFinder */ = {
 			isa = PBXGroup;
 			children = (
+				3865C6A020308CAB00D1F058 /* Resources */,
+				3805D43F202FE08D003E35A1 /* Domain */,
 				3805D430202F873D003E35A1 /* Views */,
 				3805D42E202F86E0003E35A1 /* GoogleService-Info.plist */,
 				38A3FBAB202F7CA400A47F4A /* AppDelegate.swift */,
 				38A3FBAD202F7CA400A47F4A /* ViewController.swift */,
 				38A3FBAF202F7CA400A47F4A /* Main.storyboard */,
 				38A3FBB2202F7CA400A47F4A /* Assets.xcassets */,
+				3865C6962030031200D1F058 /* AppConstants.swift */,
 				38A3FBB4202F7CA400A47F4A /* LaunchScreen.storyboard */,
 				38A3FBB7202F7CA400A47F4A /* Info.plist */,
 			);
@@ -319,13 +378,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3865C68D202FE57100D1F058 /* Info.plist in Resources */,
 				38A3FBB6202F7CA400A47F4A /* LaunchScreen.storyboard in Resources */,
 				3805D43A202F907A003E35A1 /* PotHole.xib in Resources */,
 				3805D42F202F86E0003E35A1 /* GoogleService-Info.plist in Resources */,
 				38A3FBB3202F7CA400A47F4A /* Assets.xcassets in Resources */,
 				38A3FBB1202F7CA400A47F4A /* Main.storyboard in Resources */,
+				3865C6AD2030984600D1F058 /* SpeedOverlay.xib in Resources */,
 				3805D43C202FB0FB003E35A1 /* ReportPotHoleViewController.xib in Resources */,
+				3865C6A220308CBF00D1F058 /* data.json in Resources */,
 				3805D432202F874A003E35A1 /* MapViewController.xib in Resources */,
+				3865C6B120309DEA00D1F058 /* PotHoleAnnotationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,22 +416,22 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PotFinder/Pods-PotFinder-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Cloudinary/Cloudinary.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHTTP/SwiftHTTP.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cloudinary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHTTP.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,11 +575,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3865C6AA203092AA00D1F058 /* SpeedOverlayAnnotation.swift in Sources */,
 				3805D43E202FB12D003E35A1 /* ReportPotHoleViewController.swift in Sources */,
+				3865C6992030049E00D1F058 /* TokenDomain.swift in Sources */,
+				3865C6972030031200D1F058 /* AppConstants.swift in Sources */,
 				38A3FBAE202F7CA400A47F4A /* ViewController.swift in Sources */,
 				3805D434202F884D003E35A1 /* MapViewController.swift in Sources */,
+				3865C695202FF83800D1F058 /* PotHoleMarker.swift in Sources */,
+				3865C6B320309E2B00D1F058 /* PotHoleAnnotationView.swift in Sources */,
+				3865C6AF2030988300D1F058 /* SpeedOverlay.swift in Sources */,
+				3865C6A420308E2400D1F058 /* JsonData.swift in Sources */,
+				3865C69B2030075500D1F058 /* ApiService.swift in Sources */,
+				3865C693202FF6D400D1F058 /* PotHolePinAnnotationView.swift in Sources */,
+				3805D441202FE09E003E35A1 /* PotHoleDomain.swift in Sources */,
 				38A3FBAC202F7CA400A47F4A /* AppDelegate.swift in Sources */,
 				3805D438202F904A003E35A1 /* PotHole.swift in Sources */,
+				3865C69F20307B9100D1F058 /* LocationAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,10 +8,12 @@ target 'PotFinder' do
   # Pods for PotFinder
   pod 'Firebase'
   pod 'Firebase/Auth'
-  pod 'RxSwift'
-  pod 'Alamofire'
-  pod 'ObjectMapper'
-  pod 'Cloudinary'
+  pod 'Firebase/Storage'
+  pod 'ObjectMapper'  
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Starscream', '~> 3.0.2'
+  pod 'SwiftHTTP', '~> 3.0'
 
   target 'PotFinderTests' do
     inherit! :search_paths

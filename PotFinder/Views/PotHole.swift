@@ -11,16 +11,16 @@ import MapKit
 
 class PotHoleAnnotation: NSObject, MKAnnotation {
     let title: String?
-    let locationName: String
     let coordinate: CLLocationCoordinate2D
     let image: UIImage?
+    let potHoleDomain: PotHoleDomain?
 
-    init(locationName: String, coordinate: CLLocationCoordinate2D, title: String? = nil) {
-        self.locationName = locationName
-        self.coordinate = coordinate
-        self.title = title
+    init(potHoleDomain: PotHoleDomain?) {
+        self.potHoleDomain = potHoleDomain
+        self.coordinate = CLLocationCoordinate2DMake(potHoleDomain?.lattitude ?? 0,
+                                                     potHoleDomain?.longitude ?? 0)
+        self.title = nil
         self.image = nil
-
         super.init()
     }
 }

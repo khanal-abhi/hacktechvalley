@@ -8,17 +8,28 @@
 
 import UIKit
 import CoreLocation
+import Firebase
 
 class ReportPotHoleViewController: UIViewController {
 
     var location: CLLocation?
     var reportImage: UIImage?
     let imagePicker = UIImagePickerController()
+//    var imageName: String?
+    var zipcode: String?
+    var address: String?
+    var imageData: String?
 
+    let ref = Database.database().reference()
+
+    var user: User?
+
+    let storageRef = Storage.storage().reference()
 
     @IBOutlet weak var reportedLocationLabel: UILabel!
     @IBOutlet weak var userNotes: UITextView!
     @IBOutlet weak var reportedImageView: UIImageView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
 
 
@@ -36,13 +47,22 @@ class ReportPotHoleViewController: UIViewController {
     
     @IBAction func userDidTapAddImage(_ sender: Any) {
         imagePicker.allowsEditing = true
-//        imagePicker.sourceType = .camera
-        imagePicker.sourceType = .photoLibrary
+        imagePicker.sourceType = .camera
+//        imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
     }
 
-
     @IBAction func userDidTapReport(_ sender: Any) {
+        var potHole = PotHoleDomain(JSON: [String:Any?]())
+        potHole?.lattitude = self.location?.coordinate.latitude
+        potHole?.longitude = self.location?.coordinate.longitude
+        potHole?.userId = self.user?.uid
+        potHole?.zipcode = self.zipcode
+        potHole?.address = self.address
+        potHole?.imageData = self.imageData
+        let childpath = "zipcodes/\(zipcode ?? "unlisted")/\(Int(1000 * Date().timeIntervalSince1970))"
+//        print(childpath)
+        ref.child(childpath).setValue(potHole?.toJSON())
         alertSuccess()
     }
 
@@ -57,10 +77,12 @@ class ReportPotHoleViewController: UIViewController {
 
         geocoder.reverseGeocodeLocation(location) { [weak self](marker, error) in
             if (error != nil ) {
-                print("Error")
+//                print("Error")
             } else {
                 if let marker = marker?.first {
                     self?.reportedLocationLabel.text = "Reporting a pothole at: \(marker.name ?? "Your current location")"
+                    self?.zipcode = marker.postalCode
+                    self?.address = marker.name
                 }
             }
         }
@@ -102,6 +124,10 @@ extension ReportPotHoleViewController: UIImagePickerControllerDelegate, UINaviga
             self.reportImage = image
             self.reportedImageView.image = image
             self.reportedImageView.isHidden = false
+            
+            if let data = UIImageJPEGRepresentation(image, 0.2) {
+                self.imageData = data.base64EncodedString(options: .lineLength64Characters)
+            }
         }
         picker.dismiss(animated: true, completion: nil)
     }

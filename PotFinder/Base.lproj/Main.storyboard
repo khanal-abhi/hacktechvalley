@@ -18,22 +18,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="X5q-3m-mvd">
-                                <rect key="frame" x="0.0" y="142" width="0.0" height="405"/>
+                                <rect key="frame" x="0.0" y="-184.5" width="0.0" height="731.5"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="5kM-iu-OGr">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="256"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="256" id="Fjq-kL-fKA"/>
+                                            <constraint firstAttribute="width" constant="256" id="zZd-1A-oi7"/>
+                                        </constraints>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Pot Finder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inm-ab-8V8">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="24"/>
+                                        <rect key="frame" x="0.0" y="306" width="0.0" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here you can see the potholes that are prevalent in your vicinity as well as report one if it is not there already." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaV-6P-qam">
-                                        <rect key="frame" x="0.0" y="74" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="380" width="0.0" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Iyj-Ij-PjJ">
-                                        <rect key="frame" x="0.0" y="124" width="0.0" height="281"/>
+                                        <rect key="frame" x="0.0" y="450.5" width="0.0" height="281"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SSC-93-kjZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="55.5"/>
@@ -171,4 +178,7 @@
             <point key="canvasLocation" x="903" y="-115"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image" width="341" height="341"/>
+    </resources>
 </document>

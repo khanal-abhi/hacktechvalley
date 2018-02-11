@@ -14,10 +14,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func loginAndSaveToken() {
+        ApiService.instance.logInToApi(onSuccess: { (token) in
+            UserDefaults.standard.set(token.access_token, forKey: AppConstants.tokenKey)
+        }) { (code) in
+            //
+        }
+    }
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+//        if let token = UserDefaults.standard.value(forKey: AppConstants.tokenKey) {
+
+//        } else {
+            loginAndSaveToken()
+//        }
         return true
     }
 

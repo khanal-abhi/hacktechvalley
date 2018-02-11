@@ -72,16 +72,25 @@
                             </mask>
                         </variation>
                     </stackView>
+                    <activityIndicatorView hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5bV-aY-4KM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </activityIndicatorView>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="5bV-aY-4KM" firstAttribute="width" secondItem="fUJ-Ba-sXz" secondAttribute="width" id="OVt-2R-Pav"/>
+                    <constraint firstItem="5bV-aY-4KM" firstAttribute="height" secondItem="fUJ-Ba-sXz" secondAttribute="height" id="U0S-70-JxC"/>
                     <constraint firstItem="5Hg-2K-DMc" firstAttribute="top" secondItem="WDF-ND-R3m" secondAttribute="top" constant="20" id="YXg-lr-c2m"/>
+                    <constraint firstItem="5bV-aY-4KM" firstAttribute="centerY" secondItem="fUJ-Ba-sXz" secondAttribute="centerY" id="dr6-wD-AUp"/>
+                    <constraint firstItem="5bV-aY-4KM" firstAttribute="centerX" secondItem="fUJ-Ba-sXz" secondAttribute="centerX" id="jHM-Ji-sZo"/>
                     <constraint firstItem="5Hg-2K-DMc" firstAttribute="leading" secondItem="WDF-ND-R3m" secondAttribute="leading" constant="20" id="lea-Zn-2XF"/>
                     <constraint firstItem="WDF-ND-R3m" firstAttribute="trailing" secondItem="5Hg-2K-DMc" secondAttribute="trailing" constant="20" id="uBC-zu-GzQ"/>
                 </constraints>
                 <viewLayoutGuide key="safeArea" id="WDF-ND-R3m"/>
             </view>
             <connections>
+                <outlet property="activityIndicator" destination="5bV-aY-4KM" id="TLM-n1-NEp"/>
                 <outlet property="reportedImageView" destination="fVi-0l-fio" id="aod-HD-OBy"/>
                 <outlet property="reportedLocationLabel" destination="iSL-jS-4nS" id="QY4-IJ-z73"/>
                 <outlet property="userNotes" destination="MkI-IT-cBk" id="B8k-FM-gFf"/>
