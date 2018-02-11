@@ -1,6 +1,6 @@
 # hacktechvalley
 
-###Functionality Checklist
+### Functionality Checklist
 
 - Create User ID
 - Log-in
